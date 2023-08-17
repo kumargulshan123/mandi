@@ -220,18 +220,18 @@ public class select_mandi extends javax.swing.JFrame {
        //     load_season_id();
             if (s_id > 0) {        
                     JOptionPane.showMessageDialog(null, s_id);
-          //      main_page obj = new main_page();
-            //    obj.season_id = season_id;
-             //   obj.mandi=cb_mandi.getSelectedItem().toString();
-             //   obj.crop_year=cb_crop_year.getSelectedItem().toString();
-             //   obj.total_mandi_detail();
+               main_page obj = new main_page();
+                obj.season_id = s_id;
+            //    obj.mandi=cb_mandi.getSelectedItem().toString();
+            //    obj.crop_year=cb_crop_year.getSelectedItem().toString();
+               // obj.total_mandi_detail();
 
-           //     obj.setTitle("CROP YEAR: " + cb_crop_year.getSelectedItem().toString() + "          " + "MANDI:  "
-        //                + cb_mandi.getSelectedItem().toString() + "          " + "TYPE:  " + cb_crop_type.getSelectedItem().toString());
+                obj.setTitle("CROP YEAR: " + cb_crop_year.getSelectedItem().toString() + "          " + "MANDI:  "
+                        + cb_mandi.getSelectedItem().toString() + "          " + "TYPE:  " + cb_crop_type.getSelectedItem().toString());
             //    obj.load_aarthia();
-             //   this.setVisible(false);
-             //   this.dispose();
-              //  obj.setVisible(true);
+                this.setVisible(false);
+                this.dispose();
+                obj.setVisible(true);
 
             } else {
                 JOptionPane.showMessageDialog(null, "Please Check Your Record Again");
