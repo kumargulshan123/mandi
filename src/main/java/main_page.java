@@ -1,4 +1,5 @@
 
+import java.awt.CardLayout;
 import java.awt.Dimension;
 import java.awt.Toolkit;
 import javax.swing.JFrame;
@@ -66,6 +67,112 @@ int season_id=0;
         panel_main = new javax.swing.JPanel();
         panel_main_empty = new javax.swing.JPanel();
         panel_empty = new javax.swing.JPanel();
+        panel_purchase = new javax.swing.JPanel();
+        jPanel2 = new javax.swing.JPanel();
+        panel_purchase_entry = new javax.swing.JPanel();
+        lbl_entry_header = new javax.swing.JLabel();
+        lbl_date = new javax.swing.JLabel();
+        lbl_bardana_type = new javax.swing.JLabel();
+        lbl_firm_name = new javax.swing.JLabel();
+        lbl_bags = new javax.swing.JLabel();
+        lbl_weight = new javax.swing.JLabel();
+        lbl_loose = new javax.swing.JLabel();
+        lbl_truck_no = new javax.swing.JLabel();
+        lbl_godown_name = new javax.swing.JLabel();
+        cb_bardana_type = new javax.swing.JComboBox<>();
+        cb_firm_name = new javax.swing.JComboBox<>();
+        txt_bags = new javax.swing.JTextField();
+        txt_weight = new javax.swing.JTextField();
+        txt_loose = new javax.swing.JTextField();
+        txt_truck_no = new javax.swing.JTextField();
+        jPanel38 = new javax.swing.JPanel();
+        btn_add_new_entry = new javax.swing.JButton();
+        jButton37 = new javax.swing.JButton();
+        cb_godown = new javax.swing.JComboBox<>();
+        lbl_bales = new javax.swing.JLabel();
+        txt_bales = new javax.swing.JTextField();
+        jPanel1 = new javax.swing.JPanel();
+        jDateChooser1 = new com.toedter.calendar.JDateChooser();
+        panel_lifting = new javax.swing.JPanel();
+        panel_empty5 = new javax.swing.JPanel();
+        panel_empty6 = new javax.swing.JPanel();
+        panel_lifting_entry = new javax.swing.JPanel();
+        lbl_entry_header1 = new javax.swing.JLabel();
+        lbl_date1 = new javax.swing.JLabel();
+        lbl_bardana_type1 = new javax.swing.JLabel();
+        lbl_firm_name1 = new javax.swing.JLabel();
+        lbl_bags1 = new javax.swing.JLabel();
+        lbl_weight1 = new javax.swing.JLabel();
+        lbl_loose1 = new javax.swing.JLabel();
+        lbl_truck_no1 = new javax.swing.JLabel();
+        lbl_godown_name1 = new javax.swing.JLabel();
+        cb_bardana_type1 = new javax.swing.JComboBox<>();
+        cb_firm_name1 = new javax.swing.JComboBox<>();
+        txt_bags1 = new javax.swing.JTextField();
+        txt_weight1 = new javax.swing.JTextField();
+        txt_loose1 = new javax.swing.JTextField();
+        txt_truck_no1 = new javax.swing.JTextField();
+        jPanel39 = new javax.swing.JPanel();
+        btn_add_new_entry1 = new javax.swing.JButton();
+        jButton38 = new javax.swing.JButton();
+        cb_godown1 = new javax.swing.JComboBox<>();
+        lbl_bales1 = new javax.swing.JLabel();
+        txt_bales1 = new javax.swing.JTextField();
+        jPanel3 = new javax.swing.JPanel();
+        jDateChooser2 = new com.toedter.calendar.JDateChooser();
+        panel_bardana_rec = new javax.swing.JPanel();
+        panel_bardana_rec_entry = new javax.swing.JPanel();
+        lbl_entry_header2 = new javax.swing.JLabel();
+        lbl_date2 = new javax.swing.JLabel();
+        lbl_bardana_type2 = new javax.swing.JLabel();
+        lbl_firm_name2 = new javax.swing.JLabel();
+        lbl_bags2 = new javax.swing.JLabel();
+        lbl_weight2 = new javax.swing.JLabel();
+        lbl_loose2 = new javax.swing.JLabel();
+        lbl_truck_no2 = new javax.swing.JLabel();
+        lbl_godown_name2 = new javax.swing.JLabel();
+        cb_bardana_type2 = new javax.swing.JComboBox<>();
+        cb_firm_name2 = new javax.swing.JComboBox<>();
+        txt_bags2 = new javax.swing.JTextField();
+        txt_weight2 = new javax.swing.JTextField();
+        txt_loose2 = new javax.swing.JTextField();
+        txt_truck_no2 = new javax.swing.JTextField();
+        jPanel40 = new javax.swing.JPanel();
+        btn_add_new_entry2 = new javax.swing.JButton();
+        jButton39 = new javax.swing.JButton();
+        cb_godown2 = new javax.swing.JComboBox<>();
+        lbl_bales2 = new javax.swing.JLabel();
+        txt_bales2 = new javax.swing.JTextField();
+        jPanel4 = new javax.swing.JPanel();
+        jDateChooser3 = new com.toedter.calendar.JDateChooser();
+        panel_bardana_iss = new javax.swing.JPanel();
+        panel_bardana_iss_entry = new javax.swing.JPanel();
+        lbl_entry_header3 = new javax.swing.JLabel();
+        lbl_date3 = new javax.swing.JLabel();
+        lbl_bardana_type3 = new javax.swing.JLabel();
+        lbl_firm_name3 = new javax.swing.JLabel();
+        lbl_bags3 = new javax.swing.JLabel();
+        lbl_weight3 = new javax.swing.JLabel();
+        lbl_loose3 = new javax.swing.JLabel();
+        lbl_truck_no3 = new javax.swing.JLabel();
+        lbl_godown_name3 = new javax.swing.JLabel();
+        cb_bardana_type3 = new javax.swing.JComboBox<>();
+        cb_firm_name3 = new javax.swing.JComboBox<>();
+        txt_bags3 = new javax.swing.JTextField();
+        txt_weight3 = new javax.swing.JTextField();
+        txt_loose3 = new javax.swing.JTextField();
+        txt_truck_no3 = new javax.swing.JTextField();
+        jPanel41 = new javax.swing.JPanel();
+        btn_add_new_entry3 = new javax.swing.JButton();
+        jButton40 = new javax.swing.JButton();
+        cb_godown3 = new javax.swing.JComboBox<>();
+        lbl_bales3 = new javax.swing.JLabel();
+        txt_bales3 = new javax.swing.JTextField();
+        jPanel5 = new javax.swing.JPanel();
+        jDateChooser4 = new com.toedter.calendar.JDateChooser();
+        panel_empty7 = new javax.swing.JPanel();
+        panel_empty8 = new javax.swing.JPanel();
+        panel_empty9 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new java.awt.GridBagLayout());
@@ -345,6 +452,1220 @@ int season_id=0;
 
         panel_main_empty.add(panel_empty, "card8");
 
+        panel_purchase.setLayout(new java.awt.GridBagLayout());
+
+        jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 523, Short.MAX_VALUE)
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 623, Short.MAX_VALUE)
+        );
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.gridwidth = java.awt.GridBagConstraints.REMAINDER;
+        gridBagConstraints.gridheight = java.awt.GridBagConstraints.REMAINDER;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.weightx = 0.5;
+        gridBagConstraints.weighty = 0.5;
+        panel_purchase.add(jPanel2, gridBagConstraints);
+
+        panel_purchase_entry.setBackground(java.awt.Color.gray);
+        panel_purchase_entry.setLayout(new java.awt.GridBagLayout());
+
+        lbl_entry_header.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        lbl_entry_header.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lbl_entry_header.setText("New Purchase Entry");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.gridwidth = java.awt.GridBagConstraints.REMAINDER;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
+        gridBagConstraints.insets = new java.awt.Insets(5, 0, 20, 0);
+        panel_purchase_entry.add(lbl_entry_header, gridBagConstraints);
+
+        lbl_date.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        lbl_date.setText("Date");
+        lbl_date.setPreferredSize(new java.awt.Dimension(110, 25));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.insets = new java.awt.Insets(0, 20, 20, 0);
+        panel_purchase_entry.add(lbl_date, gridBagConstraints);
+
+        lbl_bardana_type.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        lbl_bardana_type.setText("Bardana Type");
+        lbl_bardana_type.setPreferredSize(new java.awt.Dimension(110, 25));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.insets = new java.awt.Insets(0, 20, 20, 0);
+        panel_purchase_entry.add(lbl_bardana_type, gridBagConstraints);
+
+        lbl_firm_name.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        lbl_firm_name.setText("Firm Name");
+        lbl_firm_name.setPreferredSize(new java.awt.Dimension(110, 25));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 3;
+        gridBagConstraints.insets = new java.awt.Insets(0, 20, 20, 0);
+        panel_purchase_entry.add(lbl_firm_name, gridBagConstraints);
+
+        lbl_bags.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        lbl_bags.setText("Bags");
+        lbl_bags.setPreferredSize(new java.awt.Dimension(110, 25));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 4;
+        gridBagConstraints.insets = new java.awt.Insets(0, 20, 20, 0);
+        panel_purchase_entry.add(lbl_bags, gridBagConstraints);
+
+        lbl_weight.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        lbl_weight.setText("Weight");
+        lbl_weight.setPreferredSize(new java.awt.Dimension(110, 25));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 7;
+        gridBagConstraints.insets = new java.awt.Insets(0, 20, 20, 0);
+        panel_purchase_entry.add(lbl_weight, gridBagConstraints);
+
+        lbl_loose.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        lbl_loose.setText("Loose");
+        lbl_loose.setPreferredSize(new java.awt.Dimension(110, 25));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 8;
+        gridBagConstraints.insets = new java.awt.Insets(0, 20, 20, 0);
+        panel_purchase_entry.add(lbl_loose, gridBagConstraints);
+
+        lbl_truck_no.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        lbl_truck_no.setText("Truck No.");
+        lbl_truck_no.setPreferredSize(new java.awt.Dimension(110, 25));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 9;
+        gridBagConstraints.insets = new java.awt.Insets(0, 20, 20, 0);
+        panel_purchase_entry.add(lbl_truck_no, gridBagConstraints);
+
+        lbl_godown_name.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        lbl_godown_name.setText("Godown Name");
+        lbl_godown_name.setPreferredSize(new java.awt.Dimension(110, 25));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 10;
+        gridBagConstraints.insets = new java.awt.Insets(0, 20, 20, 0);
+        panel_purchase_entry.add(lbl_godown_name, gridBagConstraints);
+
+        cb_bardana_type.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        cb_bardana_type.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        cb_bardana_type.setPreferredSize(new java.awt.Dimension(150, 25));
+        cb_bardana_type.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                cb_bardana_typeItemStateChanged(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.FIRST_LINE_START;
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 15, 10);
+        panel_purchase_entry.add(cb_bardana_type, gridBagConstraints);
+
+        cb_firm_name.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        cb_firm_name.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        cb_firm_name.setPreferredSize(new java.awt.Dimension(150, 25));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 3;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.FIRST_LINE_START;
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 15, 10);
+        panel_purchase_entry.add(cb_firm_name, gridBagConstraints);
+
+        txt_bags.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        txt_bags.setPreferredSize(new java.awt.Dimension(150, 25));
+        txt_bags.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                txt_bagsFocusGained(evt);
+            }
+        });
+        txt_bags.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txt_bagsKeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                txt_bagsKeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txt_bagsKeyTyped(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 4;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.FIRST_LINE_START;
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 15, 10);
+        panel_purchase_entry.add(txt_bags, gridBagConstraints);
+
+        txt_weight.setEditable(false);
+        txt_weight.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        txt_weight.setPreferredSize(new java.awt.Dimension(150, 25));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 7;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.FIRST_LINE_START;
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 15, 10);
+        panel_purchase_entry.add(txt_weight, gridBagConstraints);
+
+        txt_loose.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        txt_loose.setPreferredSize(new java.awt.Dimension(150, 25));
+        txt_loose.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txt_looseKeyTyped(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 8;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.FIRST_LINE_START;
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 15, 10);
+        panel_purchase_entry.add(txt_loose, gridBagConstraints);
+
+        txt_truck_no.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        txt_truck_no.setPreferredSize(new java.awt.Dimension(150, 25));
+        txt_truck_no.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                txt_truck_noKeyReleased(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 9;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.FIRST_LINE_START;
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 15, 10);
+        panel_purchase_entry.add(txt_truck_no, gridBagConstraints);
+
+        jPanel38.setBackground(java.awt.Color.gray);
+        jPanel38.setLayout(new java.awt.GridBagLayout());
+
+        btn_add_new_entry.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
+        btn_add_new_entry.setText("Add");
+        btn_add_new_entry.setPreferredSize(new java.awt.Dimension(100, 25));
+        btn_add_new_entry.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_add_new_entryActionPerformed(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        jPanel38.add(btn_add_new_entry, gridBagConstraints);
+
+        jButton37.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
+        jButton37.setText("Reset");
+        jButton37.setPreferredSize(new java.awt.Dimension(100, 25));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 0;
+        jPanel38.add(jButton37, gridBagConstraints);
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 11;
+        gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 15, 10);
+        panel_purchase_entry.add(jPanel38, gridBagConstraints);
+
+        cb_godown.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        cb_godown.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        cb_godown.setPreferredSize(new java.awt.Dimension(150, 25));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 10;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.FIRST_LINE_START;
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 15, 10);
+        panel_purchase_entry.add(cb_godown, gridBagConstraints);
+
+        lbl_bales.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        lbl_bales.setText("Bales");
+        lbl_bales.setPreferredSize(new java.awt.Dimension(110, 25));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 5;
+        gridBagConstraints.insets = new java.awt.Insets(0, 20, 20, 0);
+        panel_purchase_entry.add(lbl_bales, gridBagConstraints);
+
+        txt_bales.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        txt_bales.setPreferredSize(new java.awt.Dimension(150, 25));
+        txt_bales.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txt_balesKeyTyped(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 5;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.FIRST_LINE_START;
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 15, 10);
+        panel_purchase_entry.add(txt_bales, gridBagConstraints);
+
+        jPanel1.setBackground(java.awt.Color.gray);
+        jPanel1.setLayout(new java.awt.GridBagLayout());
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 12;
+        gridBagConstraints.gridwidth = java.awt.GridBagConstraints.REMAINDER;
+        gridBagConstraints.gridheight = java.awt.GridBagConstraints.REMAINDER;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.weightx = 0.5;
+        gridBagConstraints.weighty = 0.5;
+        panel_purchase_entry.add(jPanel1, gridBagConstraints);
+
+        jDateChooser1.setPreferredSize(new java.awt.Dimension(150, 25));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.FIRST_LINE_START;
+        panel_purchase_entry.add(jDateChooser1, gridBagConstraints);
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.gridheight = java.awt.GridBagConstraints.REMAINDER;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.VERTICAL;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.FIRST_LINE_START;
+        panel_purchase.add(panel_purchase_entry, gridBagConstraints);
+
+        panel_main_empty.add(panel_purchase, "purchase");
+
+        javax.swing.GroupLayout panel_empty6Layout = new javax.swing.GroupLayout(panel_empty6);
+        panel_empty6.setLayout(panel_empty6Layout);
+        panel_empty6Layout.setHorizontalGroup(
+            panel_empty6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+        panel_empty6Layout.setVerticalGroup(
+            panel_empty6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout panel_empty5Layout = new javax.swing.GroupLayout(panel_empty5);
+        panel_empty5.setLayout(panel_empty5Layout);
+        panel_empty5Layout.setHorizontalGroup(
+            panel_empty5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(panel_empty5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(panel_empty5Layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(panel_empty6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+        panel_empty5Layout.setVerticalGroup(
+            panel_empty5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(panel_empty5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(panel_empty5Layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(panel_empty6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+
+        panel_lifting_entry.setBackground(java.awt.Color.gray);
+        panel_lifting_entry.setLayout(new java.awt.GridBagLayout());
+
+        lbl_entry_header1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        lbl_entry_header1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lbl_entry_header1.setText("New Lifting Entry");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.gridwidth = java.awt.GridBagConstraints.REMAINDER;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
+        gridBagConstraints.insets = new java.awt.Insets(5, 0, 20, 0);
+        panel_lifting_entry.add(lbl_entry_header1, gridBagConstraints);
+
+        lbl_date1.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        lbl_date1.setText("Date");
+        lbl_date1.setPreferredSize(new java.awt.Dimension(110, 25));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.insets = new java.awt.Insets(0, 20, 20, 0);
+        panel_lifting_entry.add(lbl_date1, gridBagConstraints);
+
+        lbl_bardana_type1.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        lbl_bardana_type1.setText("Bardana Type");
+        lbl_bardana_type1.setPreferredSize(new java.awt.Dimension(110, 25));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.insets = new java.awt.Insets(0, 20, 20, 0);
+        panel_lifting_entry.add(lbl_bardana_type1, gridBagConstraints);
+
+        lbl_firm_name1.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        lbl_firm_name1.setText("Firm Name");
+        lbl_firm_name1.setPreferredSize(new java.awt.Dimension(110, 25));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 3;
+        gridBagConstraints.insets = new java.awt.Insets(0, 20, 20, 0);
+        panel_lifting_entry.add(lbl_firm_name1, gridBagConstraints);
+
+        lbl_bags1.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        lbl_bags1.setText("Bags");
+        lbl_bags1.setPreferredSize(new java.awt.Dimension(110, 25));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 4;
+        gridBagConstraints.insets = new java.awt.Insets(0, 20, 20, 0);
+        panel_lifting_entry.add(lbl_bags1, gridBagConstraints);
+
+        lbl_weight1.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        lbl_weight1.setText("Weight");
+        lbl_weight1.setPreferredSize(new java.awt.Dimension(110, 25));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 7;
+        gridBagConstraints.insets = new java.awt.Insets(0, 20, 20, 0);
+        panel_lifting_entry.add(lbl_weight1, gridBagConstraints);
+
+        lbl_loose1.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        lbl_loose1.setText("Loose");
+        lbl_loose1.setPreferredSize(new java.awt.Dimension(110, 25));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 8;
+        gridBagConstraints.insets = new java.awt.Insets(0, 20, 20, 0);
+        panel_lifting_entry.add(lbl_loose1, gridBagConstraints);
+
+        lbl_truck_no1.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        lbl_truck_no1.setText("Truck No.");
+        lbl_truck_no1.setPreferredSize(new java.awt.Dimension(110, 25));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 9;
+        gridBagConstraints.insets = new java.awt.Insets(0, 20, 20, 0);
+        panel_lifting_entry.add(lbl_truck_no1, gridBagConstraints);
+
+        lbl_godown_name1.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        lbl_godown_name1.setText("Godown Name");
+        lbl_godown_name1.setPreferredSize(new java.awt.Dimension(110, 25));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 10;
+        gridBagConstraints.insets = new java.awt.Insets(0, 20, 20, 0);
+        panel_lifting_entry.add(lbl_godown_name1, gridBagConstraints);
+
+        cb_bardana_type1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        cb_bardana_type1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        cb_bardana_type1.setPreferredSize(new java.awt.Dimension(150, 25));
+        cb_bardana_type1.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                cb_bardana_type1ItemStateChanged(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.FIRST_LINE_START;
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 15, 10);
+        panel_lifting_entry.add(cb_bardana_type1, gridBagConstraints);
+
+        cb_firm_name1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        cb_firm_name1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        cb_firm_name1.setPreferredSize(new java.awt.Dimension(150, 25));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 3;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.FIRST_LINE_START;
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 15, 10);
+        panel_lifting_entry.add(cb_firm_name1, gridBagConstraints);
+
+        txt_bags1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        txt_bags1.setPreferredSize(new java.awt.Dimension(150, 25));
+        txt_bags1.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                txt_bags1FocusGained(evt);
+            }
+        });
+        txt_bags1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txt_bags1KeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                txt_bags1KeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txt_bags1KeyTyped(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 4;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.FIRST_LINE_START;
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 15, 10);
+        panel_lifting_entry.add(txt_bags1, gridBagConstraints);
+
+        txt_weight1.setEditable(false);
+        txt_weight1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        txt_weight1.setPreferredSize(new java.awt.Dimension(150, 25));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 7;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.FIRST_LINE_START;
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 15, 10);
+        panel_lifting_entry.add(txt_weight1, gridBagConstraints);
+
+        txt_loose1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        txt_loose1.setPreferredSize(new java.awt.Dimension(150, 25));
+        txt_loose1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txt_loose1KeyTyped(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 8;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.FIRST_LINE_START;
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 15, 10);
+        panel_lifting_entry.add(txt_loose1, gridBagConstraints);
+
+        txt_truck_no1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        txt_truck_no1.setPreferredSize(new java.awt.Dimension(150, 25));
+        txt_truck_no1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                txt_truck_no1KeyReleased(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 9;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.FIRST_LINE_START;
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 15, 10);
+        panel_lifting_entry.add(txt_truck_no1, gridBagConstraints);
+
+        jPanel39.setBackground(java.awt.Color.gray);
+        jPanel39.setLayout(new java.awt.GridBagLayout());
+
+        btn_add_new_entry1.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
+        btn_add_new_entry1.setText("Add");
+        btn_add_new_entry1.setPreferredSize(new java.awt.Dimension(100, 25));
+        btn_add_new_entry1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_add_new_entry1ActionPerformed(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        jPanel39.add(btn_add_new_entry1, gridBagConstraints);
+
+        jButton38.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
+        jButton38.setText("Reset");
+        jButton38.setPreferredSize(new java.awt.Dimension(100, 25));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 0;
+        jPanel39.add(jButton38, gridBagConstraints);
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 11;
+        gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 15, 10);
+        panel_lifting_entry.add(jPanel39, gridBagConstraints);
+
+        cb_godown1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        cb_godown1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        cb_godown1.setPreferredSize(new java.awt.Dimension(150, 25));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 10;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.FIRST_LINE_START;
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 15, 10);
+        panel_lifting_entry.add(cb_godown1, gridBagConstraints);
+
+        lbl_bales1.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        lbl_bales1.setText("Bales");
+        lbl_bales1.setPreferredSize(new java.awt.Dimension(110, 25));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 5;
+        gridBagConstraints.insets = new java.awt.Insets(0, 20, 20, 0);
+        panel_lifting_entry.add(lbl_bales1, gridBagConstraints);
+
+        txt_bales1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        txt_bales1.setPreferredSize(new java.awt.Dimension(150, 25));
+        txt_bales1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txt_bales1KeyTyped(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 5;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.FIRST_LINE_START;
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 15, 10);
+        panel_lifting_entry.add(txt_bales1, gridBagConstraints);
+
+        jPanel3.setBackground(java.awt.Color.gray);
+        jPanel3.setLayout(new java.awt.GridBagLayout());
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 12;
+        gridBagConstraints.gridwidth = java.awt.GridBagConstraints.REMAINDER;
+        gridBagConstraints.gridheight = java.awt.GridBagConstraints.REMAINDER;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.weightx = 0.5;
+        gridBagConstraints.weighty = 0.5;
+        panel_lifting_entry.add(jPanel3, gridBagConstraints);
+
+        jDateChooser2.setPreferredSize(new java.awt.Dimension(150, 25));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.FIRST_LINE_START;
+        panel_lifting_entry.add(jDateChooser2, gridBagConstraints);
+
+        javax.swing.GroupLayout panel_liftingLayout = new javax.swing.GroupLayout(panel_lifting);
+        panel_lifting.setLayout(panel_liftingLayout);
+        panel_liftingLayout.setHorizontalGroup(
+            panel_liftingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(panel_liftingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(panel_liftingLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(panel_empty5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(panel_liftingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(panel_liftingLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(panel_lifting_entry, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+        panel_liftingLayout.setVerticalGroup(
+            panel_liftingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(panel_liftingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(panel_liftingLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(panel_empty5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(panel_liftingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(panel_liftingLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(panel_lifting_entry, javax.swing.GroupLayout.PREFERRED_SIZE, 625, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+
+        panel_main_empty.add(panel_lifting, "card8");
+
+        panel_bardana_rec_entry.setBackground(java.awt.Color.gray);
+        panel_bardana_rec_entry.setLayout(new java.awt.GridBagLayout());
+
+        lbl_entry_header2.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        lbl_entry_header2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lbl_entry_header2.setText("New Bardana Rec Entry");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.gridwidth = java.awt.GridBagConstraints.REMAINDER;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
+        gridBagConstraints.insets = new java.awt.Insets(5, 0, 20, 0);
+        panel_bardana_rec_entry.add(lbl_entry_header2, gridBagConstraints);
+
+        lbl_date2.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        lbl_date2.setText("Date");
+        lbl_date2.setPreferredSize(new java.awt.Dimension(110, 25));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.insets = new java.awt.Insets(0, 20, 20, 0);
+        panel_bardana_rec_entry.add(lbl_date2, gridBagConstraints);
+
+        lbl_bardana_type2.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        lbl_bardana_type2.setText("Bardana Type");
+        lbl_bardana_type2.setPreferredSize(new java.awt.Dimension(110, 25));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.insets = new java.awt.Insets(0, 20, 20, 0);
+        panel_bardana_rec_entry.add(lbl_bardana_type2, gridBagConstraints);
+
+        lbl_firm_name2.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        lbl_firm_name2.setText("Firm Name");
+        lbl_firm_name2.setPreferredSize(new java.awt.Dimension(110, 25));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 3;
+        gridBagConstraints.insets = new java.awt.Insets(0, 20, 20, 0);
+        panel_bardana_rec_entry.add(lbl_firm_name2, gridBagConstraints);
+
+        lbl_bags2.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        lbl_bags2.setText("Bags");
+        lbl_bags2.setPreferredSize(new java.awt.Dimension(110, 25));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 4;
+        gridBagConstraints.insets = new java.awt.Insets(0, 20, 20, 0);
+        panel_bardana_rec_entry.add(lbl_bags2, gridBagConstraints);
+
+        lbl_weight2.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        lbl_weight2.setText("Weight");
+        lbl_weight2.setPreferredSize(new java.awt.Dimension(110, 25));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 7;
+        gridBagConstraints.insets = new java.awt.Insets(0, 20, 20, 0);
+        panel_bardana_rec_entry.add(lbl_weight2, gridBagConstraints);
+
+        lbl_loose2.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        lbl_loose2.setText("Loose");
+        lbl_loose2.setPreferredSize(new java.awt.Dimension(110, 25));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 8;
+        gridBagConstraints.insets = new java.awt.Insets(0, 20, 20, 0);
+        panel_bardana_rec_entry.add(lbl_loose2, gridBagConstraints);
+
+        lbl_truck_no2.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        lbl_truck_no2.setText("Truck No.");
+        lbl_truck_no2.setPreferredSize(new java.awt.Dimension(110, 25));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 9;
+        gridBagConstraints.insets = new java.awt.Insets(0, 20, 20, 0);
+        panel_bardana_rec_entry.add(lbl_truck_no2, gridBagConstraints);
+
+        lbl_godown_name2.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        lbl_godown_name2.setText("Godown Name");
+        lbl_godown_name2.setPreferredSize(new java.awt.Dimension(110, 25));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 10;
+        gridBagConstraints.insets = new java.awt.Insets(0, 20, 20, 0);
+        panel_bardana_rec_entry.add(lbl_godown_name2, gridBagConstraints);
+
+        cb_bardana_type2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        cb_bardana_type2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        cb_bardana_type2.setPreferredSize(new java.awt.Dimension(150, 25));
+        cb_bardana_type2.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                cb_bardana_type2ItemStateChanged(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.FIRST_LINE_START;
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 15, 10);
+        panel_bardana_rec_entry.add(cb_bardana_type2, gridBagConstraints);
+
+        cb_firm_name2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        cb_firm_name2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        cb_firm_name2.setPreferredSize(new java.awt.Dimension(150, 25));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 3;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.FIRST_LINE_START;
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 15, 10);
+        panel_bardana_rec_entry.add(cb_firm_name2, gridBagConstraints);
+
+        txt_bags2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        txt_bags2.setPreferredSize(new java.awt.Dimension(150, 25));
+        txt_bags2.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                txt_bags2FocusGained(evt);
+            }
+        });
+        txt_bags2.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txt_bags2KeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                txt_bags2KeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txt_bags2KeyTyped(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 4;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.FIRST_LINE_START;
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 15, 10);
+        panel_bardana_rec_entry.add(txt_bags2, gridBagConstraints);
+
+        txt_weight2.setEditable(false);
+        txt_weight2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        txt_weight2.setPreferredSize(new java.awt.Dimension(150, 25));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 7;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.FIRST_LINE_START;
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 15, 10);
+        panel_bardana_rec_entry.add(txt_weight2, gridBagConstraints);
+
+        txt_loose2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        txt_loose2.setPreferredSize(new java.awt.Dimension(150, 25));
+        txt_loose2.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txt_loose2KeyTyped(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 8;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.FIRST_LINE_START;
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 15, 10);
+        panel_bardana_rec_entry.add(txt_loose2, gridBagConstraints);
+
+        txt_truck_no2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        txt_truck_no2.setPreferredSize(new java.awt.Dimension(150, 25));
+        txt_truck_no2.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                txt_truck_no2KeyReleased(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 9;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.FIRST_LINE_START;
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 15, 10);
+        panel_bardana_rec_entry.add(txt_truck_no2, gridBagConstraints);
+
+        jPanel40.setBackground(java.awt.Color.gray);
+        jPanel40.setLayout(new java.awt.GridBagLayout());
+
+        btn_add_new_entry2.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
+        btn_add_new_entry2.setText("Add");
+        btn_add_new_entry2.setPreferredSize(new java.awt.Dimension(100, 25));
+        btn_add_new_entry2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_add_new_entry2ActionPerformed(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        jPanel40.add(btn_add_new_entry2, gridBagConstraints);
+
+        jButton39.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
+        jButton39.setText("Reset");
+        jButton39.setPreferredSize(new java.awt.Dimension(100, 25));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 0;
+        jPanel40.add(jButton39, gridBagConstraints);
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 11;
+        gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 15, 10);
+        panel_bardana_rec_entry.add(jPanel40, gridBagConstraints);
+
+        cb_godown2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        cb_godown2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        cb_godown2.setPreferredSize(new java.awt.Dimension(150, 25));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 10;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.FIRST_LINE_START;
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 15, 10);
+        panel_bardana_rec_entry.add(cb_godown2, gridBagConstraints);
+
+        lbl_bales2.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        lbl_bales2.setText("Bales");
+        lbl_bales2.setPreferredSize(new java.awt.Dimension(110, 25));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 5;
+        gridBagConstraints.insets = new java.awt.Insets(0, 20, 20, 0);
+        panel_bardana_rec_entry.add(lbl_bales2, gridBagConstraints);
+
+        txt_bales2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        txt_bales2.setPreferredSize(new java.awt.Dimension(150, 25));
+        txt_bales2.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txt_bales2KeyTyped(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 5;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.FIRST_LINE_START;
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 15, 10);
+        panel_bardana_rec_entry.add(txt_bales2, gridBagConstraints);
+
+        jPanel4.setBackground(java.awt.Color.gray);
+        jPanel4.setLayout(new java.awt.GridBagLayout());
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 12;
+        gridBagConstraints.gridwidth = java.awt.GridBagConstraints.REMAINDER;
+        gridBagConstraints.gridheight = java.awt.GridBagConstraints.REMAINDER;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.weightx = 0.5;
+        gridBagConstraints.weighty = 0.5;
+        panel_bardana_rec_entry.add(jPanel4, gridBagConstraints);
+
+        jDateChooser3.setPreferredSize(new java.awt.Dimension(150, 25));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.FIRST_LINE_START;
+        panel_bardana_rec_entry.add(jDateChooser3, gridBagConstraints);
+
+        javax.swing.GroupLayout panel_bardana_recLayout = new javax.swing.GroupLayout(panel_bardana_rec);
+        panel_bardana_rec.setLayout(panel_bardana_recLayout);
+        panel_bardana_recLayout.setHorizontalGroup(
+            panel_bardana_recLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(panel_bardana_recLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(panel_bardana_recLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(panel_bardana_rec_entry, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+        panel_bardana_recLayout.setVerticalGroup(
+            panel_bardana_recLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(panel_bardana_recLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(panel_bardana_recLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(panel_bardana_rec_entry, javax.swing.GroupLayout.PREFERRED_SIZE, 625, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+
+        panel_main_empty.add(panel_bardana_rec, "card8");
+
+        panel_bardana_iss_entry.setBackground(java.awt.Color.gray);
+        panel_bardana_iss_entry.setLayout(new java.awt.GridBagLayout());
+
+        lbl_entry_header3.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        lbl_entry_header3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lbl_entry_header3.setText("New Bardana Issue Entry");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.gridwidth = java.awt.GridBagConstraints.REMAINDER;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
+        gridBagConstraints.insets = new java.awt.Insets(5, 0, 20, 0);
+        panel_bardana_iss_entry.add(lbl_entry_header3, gridBagConstraints);
+
+        lbl_date3.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        lbl_date3.setText("Date");
+        lbl_date3.setPreferredSize(new java.awt.Dimension(110, 25));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.insets = new java.awt.Insets(0, 20, 20, 0);
+        panel_bardana_iss_entry.add(lbl_date3, gridBagConstraints);
+
+        lbl_bardana_type3.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        lbl_bardana_type3.setText("Bardana Type");
+        lbl_bardana_type3.setPreferredSize(new java.awt.Dimension(110, 25));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.insets = new java.awt.Insets(0, 20, 20, 0);
+        panel_bardana_iss_entry.add(lbl_bardana_type3, gridBagConstraints);
+
+        lbl_firm_name3.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        lbl_firm_name3.setText("Firm Name");
+        lbl_firm_name3.setPreferredSize(new java.awt.Dimension(110, 25));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 3;
+        gridBagConstraints.insets = new java.awt.Insets(0, 20, 20, 0);
+        panel_bardana_iss_entry.add(lbl_firm_name3, gridBagConstraints);
+
+        lbl_bags3.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        lbl_bags3.setText("Bags");
+        lbl_bags3.setPreferredSize(new java.awt.Dimension(110, 25));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 4;
+        gridBagConstraints.insets = new java.awt.Insets(0, 20, 20, 0);
+        panel_bardana_iss_entry.add(lbl_bags3, gridBagConstraints);
+
+        lbl_weight3.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        lbl_weight3.setText("Weight");
+        lbl_weight3.setPreferredSize(new java.awt.Dimension(110, 25));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 7;
+        gridBagConstraints.insets = new java.awt.Insets(0, 20, 20, 0);
+        panel_bardana_iss_entry.add(lbl_weight3, gridBagConstraints);
+
+        lbl_loose3.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        lbl_loose3.setText("Loose");
+        lbl_loose3.setPreferredSize(new java.awt.Dimension(110, 25));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 8;
+        gridBagConstraints.insets = new java.awt.Insets(0, 20, 20, 0);
+        panel_bardana_iss_entry.add(lbl_loose3, gridBagConstraints);
+
+        lbl_truck_no3.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        lbl_truck_no3.setText("Truck No.");
+        lbl_truck_no3.setPreferredSize(new java.awt.Dimension(110, 25));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 9;
+        gridBagConstraints.insets = new java.awt.Insets(0, 20, 20, 0);
+        panel_bardana_iss_entry.add(lbl_truck_no3, gridBagConstraints);
+
+        lbl_godown_name3.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        lbl_godown_name3.setText("Godown Name");
+        lbl_godown_name3.setPreferredSize(new java.awt.Dimension(110, 25));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 10;
+        gridBagConstraints.insets = new java.awt.Insets(0, 20, 20, 0);
+        panel_bardana_iss_entry.add(lbl_godown_name3, gridBagConstraints);
+
+        cb_bardana_type3.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        cb_bardana_type3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        cb_bardana_type3.setPreferredSize(new java.awt.Dimension(150, 25));
+        cb_bardana_type3.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                cb_bardana_type3ItemStateChanged(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.FIRST_LINE_START;
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 15, 10);
+        panel_bardana_iss_entry.add(cb_bardana_type3, gridBagConstraints);
+
+        cb_firm_name3.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        cb_firm_name3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        cb_firm_name3.setPreferredSize(new java.awt.Dimension(150, 25));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 3;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.FIRST_LINE_START;
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 15, 10);
+        panel_bardana_iss_entry.add(cb_firm_name3, gridBagConstraints);
+
+        txt_bags3.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        txt_bags3.setPreferredSize(new java.awt.Dimension(150, 25));
+        txt_bags3.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                txt_bags3FocusGained(evt);
+            }
+        });
+        txt_bags3.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txt_bags3KeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                txt_bags3KeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txt_bags3KeyTyped(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 4;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.FIRST_LINE_START;
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 15, 10);
+        panel_bardana_iss_entry.add(txt_bags3, gridBagConstraints);
+
+        txt_weight3.setEditable(false);
+        txt_weight3.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        txt_weight3.setPreferredSize(new java.awt.Dimension(150, 25));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 7;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.FIRST_LINE_START;
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 15, 10);
+        panel_bardana_iss_entry.add(txt_weight3, gridBagConstraints);
+
+        txt_loose3.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        txt_loose3.setPreferredSize(new java.awt.Dimension(150, 25));
+        txt_loose3.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txt_loose3KeyTyped(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 8;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.FIRST_LINE_START;
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 15, 10);
+        panel_bardana_iss_entry.add(txt_loose3, gridBagConstraints);
+
+        txt_truck_no3.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        txt_truck_no3.setPreferredSize(new java.awt.Dimension(150, 25));
+        txt_truck_no3.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                txt_truck_no3KeyReleased(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 9;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.FIRST_LINE_START;
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 15, 10);
+        panel_bardana_iss_entry.add(txt_truck_no3, gridBagConstraints);
+
+        jPanel41.setBackground(java.awt.Color.gray);
+        jPanel41.setLayout(new java.awt.GridBagLayout());
+
+        btn_add_new_entry3.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
+        btn_add_new_entry3.setText("Add");
+        btn_add_new_entry3.setPreferredSize(new java.awt.Dimension(100, 25));
+        btn_add_new_entry3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_add_new_entry3ActionPerformed(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        jPanel41.add(btn_add_new_entry3, gridBagConstraints);
+
+        jButton40.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
+        jButton40.setText("Reset");
+        jButton40.setPreferredSize(new java.awt.Dimension(100, 25));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 0;
+        jPanel41.add(jButton40, gridBagConstraints);
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 11;
+        gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 15, 10);
+        panel_bardana_iss_entry.add(jPanel41, gridBagConstraints);
+
+        cb_godown3.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        cb_godown3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        cb_godown3.setPreferredSize(new java.awt.Dimension(150, 25));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 10;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.FIRST_LINE_START;
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 15, 10);
+        panel_bardana_iss_entry.add(cb_godown3, gridBagConstraints);
+
+        lbl_bales3.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        lbl_bales3.setText("Bales");
+        lbl_bales3.setPreferredSize(new java.awt.Dimension(110, 25));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 5;
+        gridBagConstraints.insets = new java.awt.Insets(0, 20, 20, 0);
+        panel_bardana_iss_entry.add(lbl_bales3, gridBagConstraints);
+
+        txt_bales3.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        txt_bales3.setPreferredSize(new java.awt.Dimension(150, 25));
+        txt_bales3.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txt_bales3KeyTyped(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 5;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.FIRST_LINE_START;
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 15, 10);
+        panel_bardana_iss_entry.add(txt_bales3, gridBagConstraints);
+
+        jPanel5.setBackground(java.awt.Color.gray);
+        jPanel5.setLayout(new java.awt.GridBagLayout());
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 12;
+        gridBagConstraints.gridwidth = java.awt.GridBagConstraints.REMAINDER;
+        gridBagConstraints.gridheight = java.awt.GridBagConstraints.REMAINDER;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.weightx = 0.5;
+        gridBagConstraints.weighty = 0.5;
+        panel_bardana_iss_entry.add(jPanel5, gridBagConstraints);
+
+        jDateChooser4.setPreferredSize(new java.awt.Dimension(150, 25));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.FIRST_LINE_START;
+        panel_bardana_iss_entry.add(jDateChooser4, gridBagConstraints);
+
+        javax.swing.GroupLayout panel_bardana_issLayout = new javax.swing.GroupLayout(panel_bardana_iss);
+        panel_bardana_iss.setLayout(panel_bardana_issLayout);
+        panel_bardana_issLayout.setHorizontalGroup(
+            panel_bardana_issLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(panel_bardana_issLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(panel_bardana_issLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(panel_bardana_iss_entry, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+        panel_bardana_issLayout.setVerticalGroup(
+            panel_bardana_issLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(panel_bardana_issLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(panel_bardana_issLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(panel_bardana_iss_entry, javax.swing.GroupLayout.PREFERRED_SIZE, 625, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+
+        panel_main_empty.add(panel_bardana_iss, "card8");
+
+        javax.swing.GroupLayout panel_empty7Layout = new javax.swing.GroupLayout(panel_empty7);
+        panel_empty7.setLayout(panel_empty7Layout);
+        panel_empty7Layout.setHorizontalGroup(
+            panel_empty7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+        panel_empty7Layout.setVerticalGroup(
+            panel_empty7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+
+        panel_main_empty.add(panel_empty7, "card8");
+
+        javax.swing.GroupLayout panel_empty8Layout = new javax.swing.GroupLayout(panel_empty8);
+        panel_empty8.setLayout(panel_empty8Layout);
+        panel_empty8Layout.setHorizontalGroup(
+            panel_empty8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+        panel_empty8Layout.setVerticalGroup(
+            panel_empty8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+
+        panel_main_empty.add(panel_empty8, "card8");
+
+        javax.swing.GroupLayout panel_empty9Layout = new javax.swing.GroupLayout(panel_empty9);
+        panel_empty9.setLayout(panel_empty9Layout);
+        panel_empty9Layout.setHorizontalGroup(
+            panel_empty9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+        panel_empty9Layout.setVerticalGroup(
+            panel_empty9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+
+        panel_main_empty.add(panel_empty9, "card8");
+
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 0;
@@ -369,10 +1690,10 @@ int season_id=0;
     }// </editor-fold>//GEN-END:initComponents
 
     private void menu_purchaseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menu_purchaseActionPerformed
-/*
-        CardLayout card = (CardLayout) panel_main_empty.getLayout();
-        card.show(panel_main_empty, "data_entry");
 
+        CardLayout card = (CardLayout) panel_main_empty.getLayout();
+        card.show(panel_main_empty, "purchase");
+/*
         // panel_main.setVisible(true);
         lbl_entry_header.setText("NEW PURCHASE");
         visibility_purchase();
@@ -551,6 +1872,191 @@ int season_id=0;
         // TODO add your handling code here:*/
     }//GEN-LAST:event_menu_updateActionPerformed
 
+    private void cb_bardana_typeItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_cb_bardana_typeItemStateChanged
+        txt_bags.setText("");        // TODO add your handling code here:
+    }//GEN-LAST:event_cb_bardana_typeItemStateChanged
+
+    private void txt_bagsFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txt_bagsFocusGained
+
+    }//GEN-LAST:event_txt_bagsFocusGained
+
+    private void txt_bagsKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_bagsKeyPressed
+
+    }//GEN-LAST:event_txt_bagsKeyPressed
+
+    private void txt_bagsKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_bagsKeyReleased
+    /*    if (txt_bags.getText().equals("")) {
+            txt_weight.setText("0");
+        } else {
+            float filling = load_filling(cb_bardana_type.getSelectedItem().toString());
+            int bags = Integer.parseInt(txt_bags.getText());
+            float total = (filling * bags) / 100;
+            txt_weight.setText(String.valueOf(total));
+        }*/
+    }//GEN-LAST:event_txt_bagsKeyReleased
+
+    private void txt_bagsKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_bagsKeyTyped
+     /*   char c = evt.getKeyChar();
+        if (!Character.isDigit(c)) {
+            evt.consume();
+        }
+
+        if (cb_bardana_type.getSelectedItem().toString().equals("PLEASE SELECT")) {
+            cb_bardana_type.requestFocus();
+            evt.consume();
+            JOptionPane.showMessageDialog(null, "PLEASE SELECT BARDANA FIRST");
+
+        }*/
+
+    }//GEN-LAST:event_txt_bagsKeyTyped
+
+    private void txt_looseKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_looseKeyTyped
+        char c = evt.getKeyChar();
+        if (!Character.isDigit(c)) {
+            evt.consume();
+        }         // TODO add your handling code here:
+    }//GEN-LAST:event_txt_looseKeyTyped
+
+    private void txt_truck_noKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_truck_noKeyReleased
+        int position = txt_truck_no.getCaretPosition();
+        txt_truck_no.setText(txt_truck_no.getText().toUpperCase());
+        txt_truck_no.setCaretPosition(position);                // TODO add your handling code here:
+    }//GEN-LAST:event_txt_truck_noKeyReleased
+
+    private void btn_add_new_entryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_add_new_entryActionPerformed
+/*        if (selection == 1) {
+            // JOptionPane.showMessageDialog(null, "PURCHASE ENTRY");
+            insert_purchase();
+
+        } else if (selection == 2) {
+            // JOptionPane.showMessageDialog(null, "LIFTING ENTRY");
+            insert_lifting();
+        } else if (selection == 3) {
+
+            //   JOptionPane.showMessageDialog(null, "BARDANA REC ENTRY");
+            insert_recieve_bardana();
+
+        } else if (selection == 4) {
+            insert_issue_bardana();
+        }*/
+        //  total_mandi_purchase();
+    }//GEN-LAST:event_btn_add_new_entryActionPerformed
+
+    private void txt_balesKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_balesKeyTyped
+        char c = evt.getKeyChar();
+        if (!Character.isDigit(c)) {
+            evt.consume();
+        }        // TODO add your handling code here:
+    }//GEN-LAST:event_txt_balesKeyTyped
+
+    private void cb_bardana_type1ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_cb_bardana_type1ItemStateChanged
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cb_bardana_type1ItemStateChanged
+
+    private void txt_bags1FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txt_bags1FocusGained
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txt_bags1FocusGained
+
+    private void txt_bags1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_bags1KeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txt_bags1KeyPressed
+
+    private void txt_bags1KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_bags1KeyReleased
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txt_bags1KeyReleased
+
+    private void txt_bags1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_bags1KeyTyped
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txt_bags1KeyTyped
+
+    private void txt_loose1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_loose1KeyTyped
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txt_loose1KeyTyped
+
+    private void txt_truck_no1KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_truck_no1KeyReleased
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txt_truck_no1KeyReleased
+
+    private void btn_add_new_entry1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_add_new_entry1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_add_new_entry1ActionPerformed
+
+    private void txt_bales1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_bales1KeyTyped
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txt_bales1KeyTyped
+
+    private void cb_bardana_type2ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_cb_bardana_type2ItemStateChanged
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cb_bardana_type2ItemStateChanged
+
+    private void txt_bags2FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txt_bags2FocusGained
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txt_bags2FocusGained
+
+    private void txt_bags2KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_bags2KeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txt_bags2KeyPressed
+
+    private void txt_bags2KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_bags2KeyReleased
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txt_bags2KeyReleased
+
+    private void txt_bags2KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_bags2KeyTyped
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txt_bags2KeyTyped
+
+    private void txt_loose2KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_loose2KeyTyped
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txt_loose2KeyTyped
+
+    private void txt_truck_no2KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_truck_no2KeyReleased
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txt_truck_no2KeyReleased
+
+    private void btn_add_new_entry2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_add_new_entry2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_add_new_entry2ActionPerformed
+
+    private void txt_bales2KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_bales2KeyTyped
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txt_bales2KeyTyped
+
+    private void cb_bardana_type3ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_cb_bardana_type3ItemStateChanged
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cb_bardana_type3ItemStateChanged
+
+    private void txt_bags3FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txt_bags3FocusGained
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txt_bags3FocusGained
+
+    private void txt_bags3KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_bags3KeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txt_bags3KeyPressed
+
+    private void txt_bags3KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_bags3KeyReleased
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txt_bags3KeyReleased
+
+    private void txt_bags3KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_bags3KeyTyped
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txt_bags3KeyTyped
+
+    private void txt_loose3KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_loose3KeyTyped
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txt_loose3KeyTyped
+
+    private void txt_truck_no3KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_truck_no3KeyReleased
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txt_truck_no3KeyReleased
+
+    private void btn_add_new_entry3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_add_new_entry3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_add_new_entry3ActionPerformed
+
+    private void txt_bales3KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_bales3KeyTyped
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txt_bales3KeyTyped
+
     /**
      * @param args the command line arguments
      */
@@ -587,12 +2093,85 @@ int season_id=0;
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btn_add_new_entry;
+    private javax.swing.JButton btn_add_new_entry1;
+    private javax.swing.JButton btn_add_new_entry2;
+    private javax.swing.JButton btn_add_new_entry3;
+    private javax.swing.JComboBox<String> cb_bardana_type;
+    private javax.swing.JComboBox<String> cb_bardana_type1;
+    private javax.swing.JComboBox<String> cb_bardana_type2;
+    private javax.swing.JComboBox<String> cb_bardana_type3;
+    private javax.swing.JComboBox<String> cb_firm_name;
+    private javax.swing.JComboBox<String> cb_firm_name1;
+    private javax.swing.JComboBox<String> cb_firm_name2;
+    private javax.swing.JComboBox<String> cb_firm_name3;
+    private javax.swing.JComboBox<String> cb_godown;
+    private javax.swing.JComboBox<String> cb_godown1;
+    private javax.swing.JComboBox<String> cb_godown2;
+    private javax.swing.JComboBox<String> cb_godown3;
+    private javax.swing.JButton jButton37;
+    private javax.swing.JButton jButton38;
+    private javax.swing.JButton jButton39;
+    private javax.swing.JButton jButton40;
+    private com.toedter.calendar.JDateChooser jDateChooser1;
+    private com.toedter.calendar.JDateChooser jDateChooser2;
+    private com.toedter.calendar.JDateChooser jDateChooser3;
+    private com.toedter.calendar.JDateChooser jDateChooser4;
     private javax.swing.JLabel jLabel58;
     private javax.swing.JLabel jLabel59;
     private javax.swing.JLabel jLabel60;
     private javax.swing.JLabel jLabel61;
     private javax.swing.JLabel jLabel62;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel38;
+    private javax.swing.JPanel jPanel39;
+    private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel40;
+    private javax.swing.JPanel jPanel41;
     private javax.swing.JPanel jPanel48;
+    private javax.swing.JPanel jPanel5;
+    private javax.swing.JLabel lbl_bags;
+    private javax.swing.JLabel lbl_bags1;
+    private javax.swing.JLabel lbl_bags2;
+    private javax.swing.JLabel lbl_bags3;
+    private javax.swing.JLabel lbl_bales;
+    private javax.swing.JLabel lbl_bales1;
+    private javax.swing.JLabel lbl_bales2;
+    private javax.swing.JLabel lbl_bales3;
+    private javax.swing.JLabel lbl_bardana_type;
+    private javax.swing.JLabel lbl_bardana_type1;
+    private javax.swing.JLabel lbl_bardana_type2;
+    private javax.swing.JLabel lbl_bardana_type3;
+    private javax.swing.JLabel lbl_date;
+    private javax.swing.JLabel lbl_date1;
+    private javax.swing.JLabel lbl_date2;
+    private javax.swing.JLabel lbl_date3;
+    private javax.swing.JLabel lbl_entry_header;
+    private javax.swing.JLabel lbl_entry_header1;
+    private javax.swing.JLabel lbl_entry_header2;
+    private javax.swing.JLabel lbl_entry_header3;
+    private javax.swing.JLabel lbl_firm_name;
+    private javax.swing.JLabel lbl_firm_name1;
+    private javax.swing.JLabel lbl_firm_name2;
+    private javax.swing.JLabel lbl_firm_name3;
+    private javax.swing.JLabel lbl_godown_name;
+    private javax.swing.JLabel lbl_godown_name1;
+    private javax.swing.JLabel lbl_godown_name2;
+    private javax.swing.JLabel lbl_godown_name3;
+    private javax.swing.JLabel lbl_loose;
+    private javax.swing.JLabel lbl_loose1;
+    private javax.swing.JLabel lbl_loose2;
+    private javax.swing.JLabel lbl_loose3;
+    private javax.swing.JLabel lbl_truck_no;
+    private javax.swing.JLabel lbl_truck_no1;
+    private javax.swing.JLabel lbl_truck_no2;
+    private javax.swing.JLabel lbl_truck_no3;
+    private javax.swing.JLabel lbl_weight;
+    private javax.swing.JLabel lbl_weight1;
+    private javax.swing.JLabel lbl_weight2;
+    private javax.swing.JLabel lbl_weight3;
     private javax.swing.JButton menu_admin;
     private javax.swing.JButton menu_change_mandi;
     private javax.swing.JButton menu_consolidated;
@@ -604,15 +2183,48 @@ int season_id=0;
     private javax.swing.JButton menu_rec_bardana;
     private javax.swing.JButton menu_shortage;
     private javax.swing.JButton menu_update;
+    private javax.swing.JPanel panel_bardana_iss;
+    private javax.swing.JPanel panel_bardana_iss_entry;
+    private javax.swing.JPanel panel_bardana_rec;
+    private javax.swing.JPanel panel_bardana_rec_entry;
     private javax.swing.JPanel panel_empty;
+    private javax.swing.JPanel panel_empty5;
+    private javax.swing.JPanel panel_empty6;
+    private javax.swing.JPanel panel_empty7;
+    private javax.swing.JPanel panel_empty8;
+    private javax.swing.JPanel panel_empty9;
+    private javax.swing.JPanel panel_lifting;
+    private javax.swing.JPanel panel_lifting_entry;
     private javax.swing.JPanel panel_main;
     private javax.swing.JPanel panel_main_empty;
     private javax.swing.JPanel panel_menu;
+    private javax.swing.JPanel panel_purchase;
+    private javax.swing.JPanel panel_purchase_entry;
     private javax.swing.JPanel panel_total_detail;
+    private javax.swing.JTextField txt_bags;
+    private javax.swing.JTextField txt_bags1;
+    private javax.swing.JTextField txt_bags2;
+    private javax.swing.JTextField txt_bags3;
+    private javax.swing.JTextField txt_bales;
+    private javax.swing.JTextField txt_bales1;
+    private javax.swing.JTextField txt_bales2;
+    private javax.swing.JTextField txt_bales3;
+    private javax.swing.JTextField txt_loose;
+    private javax.swing.JTextField txt_loose1;
+    private javax.swing.JTextField txt_loose2;
+    private javax.swing.JTextField txt_loose3;
     public javax.swing.JTextField txt_total_balance;
     public javax.swing.JTextField txt_total_bar_balance;
     public javax.swing.JTextField txt_total_bardana;
     public javax.swing.JTextField txt_total_lift;
     public javax.swing.JTextField txt_total_purchase;
+    private javax.swing.JTextField txt_truck_no;
+    private javax.swing.JTextField txt_truck_no1;
+    private javax.swing.JTextField txt_truck_no2;
+    private javax.swing.JTextField txt_truck_no3;
+    private javax.swing.JTextField txt_weight;
+    private javax.swing.JTextField txt_weight1;
+    private javax.swing.JTextField txt_weight2;
+    private javax.swing.JTextField txt_weight3;
     // End of variables declaration//GEN-END:variables
 }
