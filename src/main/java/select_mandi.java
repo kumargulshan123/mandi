@@ -18,8 +18,8 @@ import javax.swing.JOptionPane;
  */
 public class select_mandi extends javax.swing.JFrame {
 
-    String url = "jdbc:sqlite:/Users/gulshankumar/Documents/SOFTWARE/mandi.db";
-    int season_id = 0;
+  //  String url = "jdbc:sqlite:/Users/gulshankumar/Documents/SOFTWARE/mandi.db";
+  //  int season_id = 0;
     /**
      * Creates new form test_form
      */
@@ -58,10 +58,10 @@ public class select_mandi extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(null));
+        jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel1.setLayout(new java.awt.BorderLayout());
 
-        jPanel29.setBorder(javax.swing.BorderFactory.createLineBorder(null));
+        jPanel29.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         jLabel20.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel20.setText("SELECT MANDI");
@@ -69,7 +69,7 @@ public class select_mandi extends javax.swing.JFrame {
 
         jPanel1.add(jPanel29, java.awt.BorderLayout.PAGE_START);
 
-        jPanel10.setBorder(javax.swing.BorderFactory.createLineBorder(null));
+        jPanel10.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel10.setLayout(new java.awt.GridBagLayout());
 
         jPanel28.setLayout(new java.awt.GridBagLayout());
@@ -210,15 +210,16 @@ public class select_mandi extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton10ActionPerformed
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
-        if (cb_crop_year.getSelectedItem().toString().equals("PLEASE SELECT")
-                || cb_mandi.getSelectedItem().toString().equals("PLEASE SELECT")
-                || cb_crop_type.getSelectedItem().toString().equals("PLEASE SELECT")) {
+        if (cb_crop_year.getSelectedItem().toString().equals("Please Select")
+                || cb_mandi.getSelectedItem().toString().equals("Please Select")
+                || cb_crop_type.getSelectedItem().toString().equals("Please Select")) {
             JOptionPane.showMessageDialog(null, "Please Select All Options");
         } else {
-            load_season_id();
-            if (season_id > 0) {
-                
-                    JOptionPane.showMessageDialog(null, season_id);
+               int s_id=0;
+          s_id=load_season_id();  
+       //     load_season_id();
+            if (s_id > 0) {        
+                    JOptionPane.showMessageDialog(null, s_id);
           //      main_page obj = new main_page();
             //    obj.season_id = season_id;
              //   obj.mandi=cb_mandi.getSelectedItem().toString();
@@ -317,7 +318,7 @@ public class select_mandi extends javax.swing.JFrame {
         try {
             Connection conn = connectdb.getConn();
             cb_crop_type.removeAllItems();
-            cb_crop_type.addItem("Please  Select");
+            cb_crop_type.addItem("Please Select");
             String query = "select  crop_type  from season where crop_year=? and mandi=?  ";
             PreparedStatement statement = conn.prepareStatement(query);
             statement.setString(1, cb_crop_year.getSelectedItem().toString());
@@ -332,32 +333,26 @@ public class select_mandi extends javax.swing.JFrame {
             //JOptionPane.showMessageDialog(null,e);
         }
     } // load data
-
-    public void load_season_id() {
-        Connection conn = null;
-        //   cb_crop_year.removeAllItems();
-        //  cb_crop_year.addItem("Please Select");
+ public int load_season_id() {
+        int id=0;
         try {
-            //Connection conn = connectdb.getConn();  
-            conn = DriverManager.getConnection(url);
+              Connection conn = connectdb.getConn();
             String query = "select season_id from season where crop_year=? and mandi=? and crop_type=? ";
             PreparedStatement statement = conn.prepareStatement(query);
             statement.setString(1, cb_crop_year.getSelectedItem().toString());
             statement.setString(2, cb_mandi.getSelectedItem().toString());
             statement.setString(3, cb_crop_type.getSelectedItem().toString());
-
             ResultSet result = statement.executeQuery();
             while (result.next()) {
-
-                season_id = result.getInt("season_id");
+               id = result.getInt("season_id");
             }
-
-            conn.close();
+         //   conn.close();
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, "error on season_id " + e);
         }
-
+return id;
     }
+  
 
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
