@@ -40,6 +40,7 @@ int season_id=0;
     private void initComponents() {
         java.awt.GridBagConstraints gridBagConstraints;
 
+        jPanel10 = new javax.swing.JPanel();
         panel_menu = new javax.swing.JPanel();
         menu_purchase = new javax.swing.JButton();
         menu_lifting = new javax.swing.JButton();
@@ -69,6 +70,23 @@ int season_id=0;
         panel_empty = new javax.swing.JPanel();
         panel_purchase = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
+        jPanel11 = new javax.swing.JPanel();
+        jPanel6 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jPanel7 = new javax.swing.JPanel();
+        jRadioButton1 = new javax.swing.JRadioButton();
+        jRadioButton2 = new javax.swing.JRadioButton();
+        jPanel8 = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
+        cb_bardana_type5 = new javax.swing.JComboBox<>();
+        jLabel3 = new javax.swing.JLabel();
+        cb_bardana_type4 = new javax.swing.JComboBox<>();
+        jButton1 = new javax.swing.JButton();
+        jPanel9 = new javax.swing.JPanel();
+        jLabel4 = new javax.swing.JLabel();
+        jDateChooser5 = new com.toedter.calendar.JDateChooser();
+        jButton2 = new javax.swing.JButton();
+        jPanel12 = new javax.swing.JPanel();
         panel_purchase_entry = new javax.swing.JPanel();
         lbl_entry_header = new javax.swing.JLabel();
         lbl_date = new javax.swing.JLabel();
@@ -172,7 +190,20 @@ int season_id=0;
         jDateChooser4 = new com.toedter.calendar.JDateChooser();
         panel_empty7 = new javax.swing.JPanel();
         panel_empty8 = new javax.swing.JPanel();
-        panel_empty9 = new javax.swing.JPanel();
+        panel_admin = new javax.swing.JPanel();
+
+        jPanel10.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
+        jPanel10.setLayout(jPanel10Layout);
+        jPanel10Layout.setHorizontalGroup(
+            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 990, Short.MAX_VALUE)
+        );
+        jPanel10Layout.setVerticalGroup(
+            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 725, Short.MAX_VALUE)
+        );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new java.awt.GridBagLayout());
@@ -218,7 +249,7 @@ int season_id=0;
         panel_menu.add(menu_rec_bardana);
 
         menu_issue_bardana.setFont(new java.awt.Font("Arial", 0, 9)); // NOI18N
-        menu_issue_bardana.setText("Issue Bardana");
+        menu_issue_bardana.setText("bardana_issue");
         menu_issue_bardana.setMargin(new java.awt.Insets(0, 0, 0, 0));
         menu_issue_bardana.setPreferredSize(new java.awt.Dimension(90, 20));
         menu_issue_bardana.addActionListener(new java.awt.event.ActionListener() {
@@ -443,7 +474,7 @@ int season_id=0;
         panel_empty.setLayout(panel_emptyLayout);
         panel_emptyLayout.setHorizontalGroup(
             panel_emptyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGap(0, 1200, Short.MAX_VALUE)
         );
         panel_emptyLayout.setVerticalGroup(
             panel_emptyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -455,17 +486,135 @@ int season_id=0;
         panel_purchase.setLayout(new java.awt.GridBagLayout());
 
         jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel2.setLayout(new java.awt.GridBagLayout());
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 523, Short.MAX_VALUE)
+        jPanel11.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel11.setLayout(new java.awt.GridBagLayout());
+
+        jPanel6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel6.setPreferredSize(new java.awt.Dimension(100, 30));
+
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("View Report");
+        jPanel6.add(jLabel1);
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.gridwidth = java.awt.GridBagConstraints.REMAINDER;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        jPanel11.add(jPanel6, gridBagConstraints);
+
+        jPanel7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel7.setPreferredSize(new java.awt.Dimension(100, 29));
+        jPanel7.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
+
+        jRadioButton1.setText("Datewise Purchase");
+        jPanel7.add(jRadioButton1);
+
+        jRadioButton2.setText("FirmWise Purchase");
+        jPanel7.add(jRadioButton2);
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.gridwidth = java.awt.GridBagConstraints.REMAINDER;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        jPanel11.add(jPanel7, gridBagConstraints);
+
+        jPanel8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel8.setPreferredSize(new java.awt.Dimension(100, 37));
+        jPanel8.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
+
+        jLabel2.setText("jLabel2");
+        jPanel8.add(jLabel2);
+
+        cb_bardana_type5.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        cb_bardana_type5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        cb_bardana_type5.setPreferredSize(new java.awt.Dimension(150, 25));
+        cb_bardana_type5.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                cb_bardana_type5ItemStateChanged(evt);
+            }
+        });
+        jPanel8.add(cb_bardana_type5);
+
+        jLabel3.setText("jLabel3");
+        jPanel8.add(jLabel3);
+
+        cb_bardana_type4.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        cb_bardana_type4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        cb_bardana_type4.setPreferredSize(new java.awt.Dimension(150, 25));
+        cb_bardana_type4.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                cb_bardana_type4ItemStateChanged(evt);
+            }
+        });
+        jPanel8.add(cb_bardana_type4);
+
+        jButton1.setText("jButton1");
+        jPanel8.add(jButton1);
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 3;
+        gridBagConstraints.gridwidth = java.awt.GridBagConstraints.REMAINDER;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
+        jPanel11.add(jPanel8, gridBagConstraints);
+
+        jPanel9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel9.setPreferredSize(new java.awt.Dimension(100, 40));
+        jPanel9.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
+
+        jLabel4.setText("Select Date");
+        jPanel9.add(jLabel4);
+        jPanel9.add(jDateChooser5);
+
+        jButton2.setText("jButton2");
+        jPanel9.add(jButton2);
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.gridwidth = java.awt.GridBagConstraints.REMAINDER;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        jPanel11.add(jPanel9, gridBagConstraints);
+
+        jPanel12.setPreferredSize(new java.awt.Dimension(200, 200));
+
+        javax.swing.GroupLayout jPanel12Layout = new javax.swing.GroupLayout(jPanel12);
+        jPanel12.setLayout(jPanel12Layout);
+        jPanel12Layout.setHorizontalGroup(
+            jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 906, Short.MAX_VALUE)
         );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 623, Short.MAX_VALUE)
+        jPanel12Layout.setVerticalGroup(
+            jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 895, Short.MAX_VALUE)
         );
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 4;
+        gridBagConstraints.gridwidth = java.awt.GridBagConstraints.REMAINDER;
+        gridBagConstraints.gridheight = java.awt.GridBagConstraints.REMAINDER;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.weightx = 0.5;
+        gridBagConstraints.weighty = 0.5;
+        jPanel11.add(jPanel12, gridBagConstraints);
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.FIRST_LINE_START;
+        gridBagConstraints.weightx = 0.5;
+        gridBagConstraints.weighty = 0.5;
+        jPanel2.add(jPanel11, gridBagConstraints);
 
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
@@ -1038,17 +1187,17 @@ int season_id=0;
         panel_lifting.setLayout(panel_liftingLayout);
         panel_liftingLayout.setHorizontalGroup(
             panel_liftingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGap(0, 1200, Short.MAX_VALUE)
             .addGroup(panel_liftingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(panel_liftingLayout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addGap(0, 600, Short.MAX_VALUE)
                     .addComponent(panel_empty5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
+                    .addGap(0, 600, Short.MAX_VALUE)))
             .addGroup(panel_liftingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(panel_liftingLayout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addGap(0, 455, Short.MAX_VALUE)
                     .addComponent(panel_lifting_entry, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
+                    .addGap(0, 455, Short.MAX_VALUE)))
         );
         panel_liftingLayout.setVerticalGroup(
             panel_liftingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1065,7 +1214,7 @@ int season_id=0;
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
 
-        panel_main_empty.add(panel_lifting, "card8");
+        panel_main_empty.add(panel_lifting, "lifting");
 
         panel_bardana_rec_entry.setBackground(java.awt.Color.gray);
         panel_bardana_rec_entry.setLayout(new java.awt.GridBagLayout());
@@ -1328,12 +1477,12 @@ int season_id=0;
         panel_bardana_rec.setLayout(panel_bardana_recLayout);
         panel_bardana_recLayout.setHorizontalGroup(
             panel_bardana_recLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGap(0, 1200, Short.MAX_VALUE)
             .addGroup(panel_bardana_recLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(panel_bardana_recLayout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addGap(0, 455, Short.MAX_VALUE)
                     .addComponent(panel_bardana_rec_entry, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
+                    .addGap(0, 455, Short.MAX_VALUE)))
         );
         panel_bardana_recLayout.setVerticalGroup(
             panel_bardana_recLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1345,7 +1494,7 @@ int season_id=0;
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
 
-        panel_main_empty.add(panel_bardana_rec, "card8");
+        panel_main_empty.add(panel_bardana_rec, "bardana_rec");
 
         panel_bardana_iss_entry.setBackground(java.awt.Color.gray);
         panel_bardana_iss_entry.setLayout(new java.awt.GridBagLayout());
@@ -1608,12 +1757,12 @@ int season_id=0;
         panel_bardana_iss.setLayout(panel_bardana_issLayout);
         panel_bardana_issLayout.setHorizontalGroup(
             panel_bardana_issLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGap(0, 1200, Short.MAX_VALUE)
             .addGroup(panel_bardana_issLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(panel_bardana_issLayout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addGap(0, 455, Short.MAX_VALUE)
                     .addComponent(panel_bardana_iss_entry, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
+                    .addGap(0, 455, Short.MAX_VALUE)))
         );
         panel_bardana_issLayout.setVerticalGroup(
             panel_bardana_issLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1625,13 +1774,14 @@ int season_id=0;
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
 
-        panel_main_empty.add(panel_bardana_iss, "card8");
+        panel_main_empty.add(panel_bardana_iss, "bardana_issue");
+        panel_bardana_iss.getAccessibleContext().setAccessibleName("");
 
         javax.swing.GroupLayout panel_empty7Layout = new javax.swing.GroupLayout(panel_empty7);
         panel_empty7.setLayout(panel_empty7Layout);
         panel_empty7Layout.setHorizontalGroup(
             panel_empty7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGap(0, 1200, Short.MAX_VALUE)
         );
         panel_empty7Layout.setVerticalGroup(
             panel_empty7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1644,7 +1794,7 @@ int season_id=0;
         panel_empty8.setLayout(panel_empty8Layout);
         panel_empty8Layout.setHorizontalGroup(
             panel_empty8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGap(0, 1200, Short.MAX_VALUE)
         );
         panel_empty8Layout.setVerticalGroup(
             panel_empty8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1653,18 +1803,18 @@ int season_id=0;
 
         panel_main_empty.add(panel_empty8, "card8");
 
-        javax.swing.GroupLayout panel_empty9Layout = new javax.swing.GroupLayout(panel_empty9);
-        panel_empty9.setLayout(panel_empty9Layout);
-        panel_empty9Layout.setHorizontalGroup(
-            panel_empty9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+        javax.swing.GroupLayout panel_adminLayout = new javax.swing.GroupLayout(panel_admin);
+        panel_admin.setLayout(panel_adminLayout);
+        panel_adminLayout.setHorizontalGroup(
+            panel_adminLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1200, Short.MAX_VALUE)
         );
-        panel_empty9Layout.setVerticalGroup(
-            panel_empty9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        panel_adminLayout.setVerticalGroup(
+            panel_adminLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 0, Short.MAX_VALUE)
         );
 
-        panel_main_empty.add(panel_empty9, "card8");
+        panel_main_empty.add(panel_admin, "admin");
 
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -1712,10 +1862,10 @@ int season_id=0;
     }//GEN-LAST:event_menu_purchaseActionPerformed
 
     private void menu_liftingActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menu_liftingActionPerformed
-/*
+
         CardLayout card = (CardLayout) panel_main_empty.getLayout();
-        card.show(panel_main_empty, "data_entry");
-        lbl_entry_header.setText("NEW LIFTING");
+        card.show(panel_main_empty, "lifting");
+    /*    lbl_entry_header.setText("NEW LIFTING");
         visibility_lifting();
         selection = 2;
         data_entry_view obj = new data_entry_view();
@@ -1731,9 +1881,9 @@ int season_id=0;
     }//GEN-LAST:event_menu_liftingActionPerformed
 
     private void menu_rec_bardanaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menu_rec_bardanaActionPerformed
-    /*    CardLayout card = (CardLayout) panel_main_empty.getLayout();
-        card.show(panel_main_empty, "data_entry");
-        visibility_bardana_rec();
+       CardLayout card = (CardLayout) panel_main_empty.getLayout();
+        card.show(panel_main_empty, "bardana_rec");
+     /*    visibility_bardana_rec();
         lbl_entry_header.setText("NEW BARDANA REC");
         load_bardana();
         selection = 3;
@@ -1743,10 +1893,10 @@ int season_id=0;
     }//GEN-LAST:event_menu_rec_bardanaActionPerformed
 
     private void menu_issue_bardanaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menu_issue_bardanaActionPerformed
-/*
-        CardLayout card = (CardLayout) panel_main_empty.getLayout();
-        card.show(panel_main_empty, "data_entry");
 
+        CardLayout card = (CardLayout) panel_main_empty.getLayout();
+        card.show(panel_main_empty, "bardana_issue");
+/*
         //        panel_data_entries.setVisible(true);
         lbl_entry_header.setText("NEW BARDANA ISSUE");
         visibility_bardana_issue();
@@ -2057,6 +2207,14 @@ int season_id=0;
         // TODO add your handling code here:
     }//GEN-LAST:event_txt_bales3KeyTyped
 
+    private void cb_bardana_type4ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_cb_bardana_type4ItemStateChanged
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cb_bardana_type4ItemStateChanged
+
+    private void cb_bardana_type5ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_cb_bardana_type5ItemStateChanged
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cb_bardana_type5ItemStateChanged
+
     /**
      * @param args the command line arguments
      */
@@ -2101,6 +2259,8 @@ int season_id=0;
     private javax.swing.JComboBox<String> cb_bardana_type1;
     private javax.swing.JComboBox<String> cb_bardana_type2;
     private javax.swing.JComboBox<String> cb_bardana_type3;
+    private javax.swing.JComboBox<String> cb_bardana_type4;
+    private javax.swing.JComboBox<String> cb_bardana_type5;
     private javax.swing.JComboBox<String> cb_firm_name;
     private javax.swing.JComboBox<String> cb_firm_name1;
     private javax.swing.JComboBox<String> cb_firm_name2;
@@ -2109,6 +2269,8 @@ int season_id=0;
     private javax.swing.JComboBox<String> cb_godown1;
     private javax.swing.JComboBox<String> cb_godown2;
     private javax.swing.JComboBox<String> cb_godown3;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton37;
     private javax.swing.JButton jButton38;
     private javax.swing.JButton jButton39;
@@ -2117,12 +2279,20 @@ int season_id=0;
     private com.toedter.calendar.JDateChooser jDateChooser2;
     private com.toedter.calendar.JDateChooser jDateChooser3;
     private com.toedter.calendar.JDateChooser jDateChooser4;
+    private com.toedter.calendar.JDateChooser jDateChooser5;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel58;
     private javax.swing.JLabel jLabel59;
     private javax.swing.JLabel jLabel60;
     private javax.swing.JLabel jLabel61;
     private javax.swing.JLabel jLabel62;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel10;
+    private javax.swing.JPanel jPanel11;
+    private javax.swing.JPanel jPanel12;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel38;
@@ -2132,6 +2302,12 @@ int season_id=0;
     private javax.swing.JPanel jPanel41;
     private javax.swing.JPanel jPanel48;
     private javax.swing.JPanel jPanel5;
+    private javax.swing.JPanel jPanel6;
+    private javax.swing.JPanel jPanel7;
+    private javax.swing.JPanel jPanel8;
+    private javax.swing.JPanel jPanel9;
+    private javax.swing.JRadioButton jRadioButton1;
+    private javax.swing.JRadioButton jRadioButton2;
     private javax.swing.JLabel lbl_bags;
     private javax.swing.JLabel lbl_bags1;
     private javax.swing.JLabel lbl_bags2;
@@ -2183,6 +2359,7 @@ int season_id=0;
     private javax.swing.JButton menu_rec_bardana;
     private javax.swing.JButton menu_shortage;
     private javax.swing.JButton menu_update;
+    private javax.swing.JPanel panel_admin;
     private javax.swing.JPanel panel_bardana_iss;
     private javax.swing.JPanel panel_bardana_iss_entry;
     private javax.swing.JPanel panel_bardana_rec;
@@ -2192,7 +2369,6 @@ int season_id=0;
     private javax.swing.JPanel panel_empty6;
     private javax.swing.JPanel panel_empty7;
     private javax.swing.JPanel panel_empty8;
-    private javax.swing.JPanel panel_empty9;
     private javax.swing.JPanel panel_lifting;
     private javax.swing.JPanel panel_lifting_entry;
     private javax.swing.JPanel panel_main;
