@@ -1,11 +1,11 @@
 
 
 
-import com.itextpdf.text.*;
-import com.itextpdf.text.pdf.BaseFont;
-import com.itextpdf.text.pdf.PdfPCell;
-import com.itextpdf.text.pdf.PdfPTable;
-import com.itextpdf.text.pdf.PdfWriter;
+//import com.itextpdf.text.*;
+//import com.itextpdf.text.pdf.BaseFont;
+//import com.itextpdf.text.pdf.PdfPCell;
+//import com.itextpdf.text.pdf.PdfPTable;
+//import com.itextpdf.text.pdf.PdfWriter;
 
 import java.awt.CardLayout;
 import java.awt.Dimension;
@@ -2830,7 +2830,7 @@ public class main_page extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton44ActionPerformed
 
     private void btn_pg4_dateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_pg4_dateActionPerformed
-        if (dt_pg4.getDate() == null) {
+   /*     if (dt_pg4.getDate() == null) {
             JOptionPane.showMessageDialog(null, "PLEASE SELECT DATE FIRST");
         } else {
             table_pg4();
@@ -2884,7 +2884,7 @@ public class main_page extends javax.swing.JFrame {
             } catch (FileNotFoundException | DocumentException ex) {
                 Logger.getLogger(main_page.class.getName()).log(Level.SEVERE, null, ex);
             }
-        }
+        }*/
     }//GEN-LAST:event_btn_pg4_dateActionPerformed
 
     private void btn_pg4_completeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_pg4_completeActionPerformed
